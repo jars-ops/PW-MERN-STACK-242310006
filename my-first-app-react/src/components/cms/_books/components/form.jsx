@@ -41,7 +41,6 @@ export default function BookForm({ onSubmit, onClose }) {
   return (
     <form onSubmit={handleSubmit} className="p-2">
       <div className="row">
-        {/* KOLOM KIRI: Tempat Book Title, Type Book, dan Sinopsis */}
         <div className="col-md-6">
           <TextInput
             title="Book Title"
@@ -70,7 +69,6 @@ export default function BookForm({ onSubmit, onClose }) {
           />
         </div>
 
-        {/* KOLOM KANAN: Tempat Author Name dan Cover Image (Menjamin Keduanya Sejajar Lurus) */}
         <div className="col-md-6">
           <TextInput
             title="Author Name"
@@ -89,7 +87,6 @@ export default function BookForm({ onSubmit, onClose }) {
         </div>
       </div>
 
-      {/* BARIS BAWAH: Tempat Story (Full Width) */}
       <div className="row">
         <div className="col-12">
           <TextAreaInput
@@ -104,7 +101,6 @@ export default function BookForm({ onSubmit, onClose }) {
         </div>
       </div>
 
-      {/* TOMBOL AKSI: Berada di Tengah (justify-content-center) & Submit Berwarna Biru (btn-primary) */}
       <div className="d-flex justify-content-center gap-3 mt-4 pt-3 border-top border-secondary">
         <button 
           type="button" 
